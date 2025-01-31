@@ -1,101 +1,133 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div className="flex sm:flex-row flex-col items-center justify-center min-h-screen bg-[#00AE35] font-[family-name:var(--font-noto-sans-thai)] mx-6 my-6">
+      <div className="hidden sm:flex mr-4 md:mr-8 flex-col items-start">
+        <p className="text-2xl font-semibold text-neutral-50">LMWN UX Assignment – Prototype</p>
+        <p className="text-xl text-neutral-200">Pixel-Perfected Crafted by <a className="text-neutral-50 font-semibold hover:underline underline-offset-4" href="https://dhanav.me/" target="_blank">Dhanavadh Saito</a></p>
+        <p className="mt-2 text-lg text-neutral-50 font-semibold">Specification</p>
+        <p className="text-base text-neutral-200">Portrait Dimension: iPhone 13 mini/375x812 pt (1125x2436 px @3x)</p>
+      </div>
+      <div className="sm:hidden flex flex-col items-start my-8">
+        <p className="text-2xl font-semibold text-neutral-50">LMWN UX Assignment – Prototype</p>
+        <p className="text-xl text-neutral-200">Crafted by Dhanavadh Saito</p>
+        <p className="mt-2 text-lg text-neutral-50 font-semibold">Specification</p>
+        <p className="text-base text-neutral-200">Portrait Dimension: iPhone 13 mini/375x812 pt (1125x2436 px @3x)</p>
+      </div>
+      <div className="flex flex-col justify-around items-center relative w-[375px] h-[812px] ">
+                                    
+        <div className="flex flex-col justify-start w-[375px] h-[812px] overflow-x-auto scrollbar-hide bg-white rounded-t-[48px]">
+          
+            <div className="w-[375px] h-[350px] bg-gradient-to-b from-[#920107] via-[#007A25] to-[#004716]  rounded-b-[20px]">
+            <div className="flex justify-center h-[62px]">
+              <img src="asset/Status_Bar_W.svg" className="absolute"></img>
+              <img src="asset/Dynamic_Island.svg" className="absolute my-[11px]"></img>
+            </div>            
+              <div className="mx-4 z-10">
+                <div className="flex flex-col items-start mt-[18px]">
+                  <p className="text-base font-semibold text-white">สวัสดี โคนี่</p>
+                  <p className="text-lg font-semibold text-white mt-[7px]">Bonchon ลดสูงสุด ฿60*</p>
+                  <div className="flex items-center justify-between mt-[14px] bg-black bg-opacity-30 w-full h-[50px] rounded-lg shadow-md">
+                    <div className="flex items-center">
+                      <img src="asset/icon/location.svg" className="mx-[14px] my-[15px] w-[24px]"></img>
+                      <p className="text-[14px] text-white font-semibold max-w-[230px] truncate">อาคารมหาจักรีสิรินธร, ถนนพญาไท, แขวงวังใหม่</p>
+                    </div>
+                    <div>                      
+                      <img src="asset/icon/arrow-r.svg" className="mx-[14px] my-[15px] w-[20px]"></img>
+                    </div>
+                  </div>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+                  {/* Item Group */}
+                  <div className="w-full">
+                    <div className="grid grid-cols-2 gap-3 mt-4 w-full fill-">
+                            <div className="flex items-center justify-between h-[80px] w-full bg-[#f9f9f9] rounded-lg shadow-md overflow-hidden">
+                              <p className="ml-6 text-[14px] font-semibold">สั่งอาหาร</p>
+                              <div className="flex flex-col items-center h-full justify-between">
+                                <a className="flex items-start mt-[3px] px-1 py-[0.5px] bg-[#fe1f32] rounded-full text-[11px] text-white font-semibold">ลด ฿100<a className="text-[6px]">*</a></a>
+                                <img src="/asset/menu/orderfood.png" className="h-[58px] pt-[2px] mx-[10px]"></img>
+                              </div>
+                            </div>                
+                            <div className="flex items-center justify-between h-[80px] w-full bg-[#f9f9f9] rounded-lg shadow-md overflow-hidden">
+                              <p className="ml-6 text-[14px] font-semibold">เรียกรถ</p>
+                              <div className="flex flex-col items-center h-full justify-between">
+                              <a className="mt-[3px] px-1 py-[0.5px] text-[#fe1f32] rounded-full text-[11px] bg-[#ffe4e3] font-semibold">ถูกชัวร์</a>
+                              <img src="/asset/menu/drive.png" className="h-[58px] pt-[2px] rounded-lg"></img>
+                              </div>
+                            </div>                                                                          
+                    </div>
+                    <div className="grid grid-cols-3 gap-3 mt-4 w-full">
+                          <div className="flex flex-col items-center">
+                            <div className="flex items-center justify-center h-[80px] w-full bg-white rounded-lg shadow-md ">
+                              <div className="flex flex-col items-end h-full">
+                                <a className="px-1 pb-[0.5px] mt-[8px] mb-[2px] text-[#fe1f32] rounded-full text-[9px] bg-[#ffe4e3] font-semibold">ถูกชัวร์</a>
+                                <img src="/asset/menu/messenger.png" className="w-[54px] pt-[2px]"></img>
+                              </div>
+                            </div>
+                            <p className="mt-[10px] text-[15px] font-semibold">แมสเซนเจอร์</p>
+                          </div>                      
+                          <div className="flex flex-col items-center">
+                            <div className="flex items-center justify-center h-[80px] w-full bg-white rounded-lg shadow-md">
+                              <div className="flex flex-col items-end h-full">
+                                <a className="px-1 pb-[0.5px] mt-[8px] mb-[2px] text-[#fe1f32] rounded-full text-[9px] bg-[#ffe4e3] font-semibold">ถูกชัวร์</a>
+                                <img src="/asset/menu/mart.png" className="w-[54px] pt-[2px]"></img>
+                              </div>
+                            </div>
+                            <p className="mt-[10px] text-[15px] font-semibold">สั่งของ</p>
+                          </div>                      
+                          <div className="flex flex-col items-center">
+                            <div className="flex items-center justify-center h-[80px] w-full bg-white rounded-lg shadow-md">
+                              <div className="flex flex-col items-end h-full">
+                                <a className="px-1 pb-[0.5px] mt-[8px] mb-[8px] text-[#fe1f32] rounded-full text-[9px] bg-[#ffe4e3] font-semibold">ถูกชัวร์</a>
+                                <img src="/asset/menu/coupon.png" className="w-[54px] pt-[2px]"></img>
+                              </div>
+                            </div>
+                            <p className="mt-[10px] text-[15px] font-semibold">แพ็กเกจ</p>
+                          </div>                                          
+                    </div>
+                  </div>
+
+                  <div className="flex items-center justify-center h-[112px] w-full mt-[26px] bg-green-200 rounded-[5px]">
+                    <p>Ads</p>
+                  </div>
+
+                  <div className="flex w-full h-[203px] bg-yellow-500 rounded-[5px] mt-6">
+
+                  </div>
+                  <div className="flex w-full h-[203px] bg-yellow-500 rounded-[5px] mt-6">
+
+                  </div>
+
+                </div>
+              </div>              
+            </div>          
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        
+        <div className="flex flex-col justify-center bg-white border-t-[1px] border-neutral-300 rounded-b-[48px] h-[84px]">
+          <div className="flex justify-center flex-cols-4 h-[50px] mx-4 gap-12">
+            <div className="flex flex-col items-center pt-2">              
+              <img src="/asset/icon/home.svg" className="h-6"></img>
+              <p className="mt-2 text-[12px] font-medium text-[#00AE35]">หน้าแรก</p>
+            </div>
+            <div className="flex flex-col items-center pt-2">
+              <img src="/asset/icon/order.svg" className="h-6"></img>
+              <p className="mt-2 text-[12px] font-medium">คำสั่งซื้อ</p>
+            </div>
+            <div className="flex flex-col items-center pt-2">
+              <img src="/asset/icon/noti.svg" className="h-6"></img>
+              <p className="mt-2 text-[12px] font-medium">กล่องข้อความ</p>
+            </div>
+            <div className="flex flex-col items-center pt-2">
+              <img src="/asset/icon/other.svg" className="h-6"></img>
+              <p className="mt-2 text-[12px] font-medium">อื่นๆ</p>
+            </div>
+            
+          </div>
+          <div className="h-[34px]">
+            <img src="/asset/Home_Indicator.svg" className="h-full w-full"></img>
+            
+          </div>
+        </div>
+      </div>
+      
     </div>
   );
 }
