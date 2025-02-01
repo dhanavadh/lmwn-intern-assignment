@@ -1,16 +1,5 @@
-"use client"
-import { Dialog, Transition } from '@headlessui/react'
-import { Fragment, useState } from 'react'
-
 export default function Home() {
-  const [isOpen, setIsOpen] = useState(false)
-
-  function closeModal() {
-    setIsOpen(false)
-  }
-
-  function openModal() {
-    setIsOpen(true)
+  
   }
   return (
     <div className="relative flex sm:flex-row flex-col items-center justify-center min-h-screen bg-[#00AE35] font-[family-name:var(--font-noto-sans-thai)] mx-6 my-6">
