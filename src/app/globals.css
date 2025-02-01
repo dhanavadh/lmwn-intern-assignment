@@ -16,3 +16,22 @@ body {
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
+
+@keyframes blink {
+  0% {
+      opacity: 0;
+  }
+  50% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+.blinking-text {  
+  font-size: 11px;
+  color: white;
+  font-weight: 600;
+  animation: blink 2s infinite;
+}
