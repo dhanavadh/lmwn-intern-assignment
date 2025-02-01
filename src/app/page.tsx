@@ -1,6 +1,4 @@
-export default function Home() {
-  
-  }
+export default function Home(){
   return (
     <div className="relative flex sm:flex-row flex-col items-center justify-center min-h-screen bg-[#00AE35] font-[family-name:var(--font-noto-sans-thai)] mx-6 my-6">
       <div className="hidden sm:flex mr-4 md:mr-8 flex-col items-start">
